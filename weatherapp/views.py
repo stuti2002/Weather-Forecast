@@ -15,7 +15,7 @@ def index(request):
             "pressure":str(jsondata['main']['pressure']),
             "humidity":str(jsondata['main']['humidity']),
             }  
-        
+          
     else:
         city=''
         data={}
