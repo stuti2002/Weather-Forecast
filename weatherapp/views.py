@@ -14,9 +14,10 @@ def index(request):
             "temp":str(jsondata['main']['temp']),
             "pressure":str(jsondata['main']['pressure']),
             "humidity":str(jsondata['main']['humidity']),
-            }   
+            }  
+        
     else:
         city=''
         data={}
 
-    return render(request,'index.html',{'city':city,'data':data})
+    return render(request,'index.html',{'city':city,'data':data} )
